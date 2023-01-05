@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		53F6B69C2965B88C008D07C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B69B2965B88C008D07C1 /* AppDelegate.swift */; };
 		53F6B69E2965B88C008D07C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B69D2965B88C008D07C1 /* SceneDelegate.swift */; };
-		53F6B6A02965B88C008D07C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B69F2965B88C008D07C1 /* ViewController.swift */; };
+		53F6B6A02965B88C008D07C1 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B69F2965B88C008D07C1 /* ReminderListViewController.swift */; };
 		53F6B6A32965B88C008D07C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F6B6A12965B88C008D07C1 /* Main.storyboard */; };
 		53F6B6A62965B88C008D07C1 /* ios_todo_list.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B6A42965B88C008D07C1 /* ios_todo_list.xcdatamodeld */; };
 		53F6B6A82965B88D008D07C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F6B6A72965B88D008D07C1 /* Assets.xcassets */; };
@@ -17,6 +17,7 @@
 		53F6B6B62965B88D008D07C1 /* ios_todo_listTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B6B52965B88D008D07C1 /* ios_todo_listTests.swift */; };
 		53F6B6C02965B88D008D07C1 /* ios_todo_listUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B6BF2965B88D008D07C1 /* ios_todo_listUITests.swift */; };
 		53F6B6C22965B88D008D07C1 /* ios_todo_listUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B6C12965B88D008D07C1 /* ios_todo_listUITestsLaunchTests.swift */; };
+		53F6B6D72965C267008D07C1 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F6B6D62965C267008D07C1 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		53F6B6982965B88C008D07C1 /* ios_todo_list.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_todo_list.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F6B69B2965B88C008D07C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53F6B69D2965B88C008D07C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53F6B69F2965B88C008D07C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53F6B69F2965B88C008D07C1 /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		53F6B6A22965B88C008D07C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53F6B6A52965B88C008D07C1 /* ios_todo_list.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_todo_list.xcdatamodel; sourceTree = "<group>"; };
 		53F6B6A72965B88D008D07C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		53F6B6BB2965B88D008D07C1 /* ios_todo_listUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_todo_listUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F6B6BF2965B88D008D07C1 /* ios_todo_listUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_todo_listUITests.swift; sourceTree = "<group>"; };
 		53F6B6C12965B88D008D07C1 /* ios_todo_listUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_todo_listUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53F6B6D62965C267008D07C1 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,12 @@
 		53F6B69A2965B88C008D07C1 /* ios_todo_list */ = {
 			isa = PBXGroup;
 			children = (
+				53F6B6D12965BC2A008D07C1 /* Models */,
+				53F6B6D22965BC4A008D07C1 /* Views */,
+				53F6B6D32965BC62008D07C1 /* Screens */,
+				53F6B6D52965BCBD008D07C1 /* Controller */,
 				53F6B69B2965B88C008D07C1 /* AppDelegate.swift */,
 				53F6B69D2965B88C008D07C1 /* SceneDelegate.swift */,
-				53F6B69F2965B88C008D07C1 /* ViewController.swift */,
-				53F6B6A12965B88C008D07C1 /* Main.storyboard */,
 				53F6B6A72965B88D008D07C1 /* Assets.xcassets */,
 				53F6B6A92965B88D008D07C1 /* LaunchScreen.storyboard */,
 				53F6B6AC2965B88D008D07C1 /* Info.plist */,
@@ -128,6 +132,37 @@
 				53F6B6C12965B88D008D07C1 /* ios_todo_listUITestsLaunchTests.swift */,
 			);
 			path = ios_todo_listUITests;
+			sourceTree = "<group>";
+		};
+		53F6B6D12965BC2A008D07C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53F6B6D62965C267008D07C1 /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53F6B6D22965BC4A008D07C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53F6B6D32965BC62008D07C1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				53F6B6A12965B88C008D07C1 /* Main.storyboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		53F6B6D52965BCBD008D07C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53F6B69F2965B88C008D07C1 /* ReminderListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53F6B6A02965B88C008D07C1 /* ViewController.swift in Sources */,
+				53F6B6A02965B88C008D07C1 /* ReminderListViewController.swift in Sources */,
 				53F6B6A62965B88C008D07C1 /* ios_todo_list.xcdatamodeld in Sources */,
 				53F6B69C2965B88C008D07C1 /* AppDelegate.swift in Sources */,
 				53F6B69E2965B88C008D07C1 /* SceneDelegate.swift in Sources */,
+				53F6B6D72965C267008D07C1 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,9 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    //ライフサイクル。
+    //アプリが立ち上がったなどの情報はここに書いていく。
+    
     var window: UIWindow?
 
 
