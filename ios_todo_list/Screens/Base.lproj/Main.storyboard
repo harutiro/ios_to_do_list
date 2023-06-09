@@ -26,6 +26,7 @@
                         <view key="backgroundView" contentMode="scaleToFill" id="ZOa-9n-ev2">
                             <rect key="frame" x="0.0" y="-59" width="393" height="852"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <viewLayoutGuide key="safeArea" id="TKd-QG-6V9"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <cells>
